@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="エチオピア イルガチェフェ">
+  <rect width="400" height="400" fill="#8a5a3b"/>
+  <ellipse cx="200" cy="165" rx="68" ry="92" fill="#3e2a1c"/>
+  <path d="M200 80 Q212 165 200 250" stroke="#8a5a3b" stroke-width="7" fill="none"/>
+  <text x="200" y="320" font-family="sans-serif" font-size="34" font-weight="bold" fill="#fff" text-anchor="middle">Ethiopia</text>
+</svg>
