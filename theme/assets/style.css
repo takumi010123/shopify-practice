@@ -71,6 +71,7 @@ img { display: block; max-width: 100%; }
 .product-card__title { font-size: 15px; margin: 14px 12px 6px; }
 .product-card__price { font-size: 16px; font-weight: bold; color: #a9743b; margin-bottom: 12px; }
 .product-card__button {
+  display: inline-block;
   background: #2b2520;
   color: #fff;
   border: none;
@@ -81,6 +82,97 @@ img { display: block; max-width: 100%; }
   transition: background .15s ease;
 }
 .product-card__button:hover { background: #463c33; }
+
+/* ===== 商品詳細 ===== */
+.product-detail {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 56px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.product-detail__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #fff;
+  border: 1px solid #e8e2da;
+  border-radius: 12px;
+}
+.product-detail__title { font-size: 26px; margin-bottom: 12px; }
+.product-detail__price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #a9743b;
+  margin-bottom: 20px;
+}
+.product-detail__description {
+  font-size: 15px;
+  color: #6b5f52;
+  margin-bottom: 28px;
+}
+.product-detail__button {
+  display: inline-block;
+  background: #2b2520;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 13px 40px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background .15s ease;
+}
+.product-detail__button:hover { background: #463c33; }
+
+/* ===== カート ===== */
+.cart { max-width: 720px; margin: 0 auto; padding: 56px 24px; }
+.cart h1 { font-size: 24px; margin-bottom: 28px; }
+.cart--empty { text-align: center; padding: 80px 24px; }
+.cart--empty h1 { margin-bottom: 16px; }
+.cart--empty a { color: #a9743b; text-decoration: underline; }
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e8e2da;
+}
+.cart-item img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border: 1px solid #e8e2da;
+  border-radius: 8px;
+}
+.cart-item__title { flex: 1; font-size: 15px; }
+.cart-item__qty { font-size: 14px; color: #6b5f52; }
+.cart-item__price {
+  min-width: 90px;
+  text-align: right;
+  font-weight: bold;
+  color: #a9743b;
+}
+.cart__total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 24px 0;
+}
+.cart__checkout {
+  display: block;
+  width: 100%;
+  background: #2b2520;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background .15s ease;
+}
+.cart__checkout:hover { background: #463c33; }
 
 /* ===== フッター ===== */
 .site-footer {
@@ -95,6 +187,7 @@ img { display: block; max-width: 100%; }
 @media (max-width: 720px) {
   .product-grid { grid-template-columns: 1fr 1fr; }
   .site-header { flex-direction: column; gap: 10px; }
+  .product-detail { grid-template-columns: 1fr; gap: 24px; }
 }
 @media (max-width: 480px) {
   .product-grid { grid-template-columns: 1fr; }
