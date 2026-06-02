@@ -1,0 +1,21 @@
+<section class="products">
+  <h2 class="products__heading">おすすめの豆</h2>
+  <div class="product-grid">
+    {% for product in section.settings.collection.products %}
+      {% render 'product-card', product: product %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "おすすめ商品",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "表示するコレクション"
+      }
+    ]
+  }
+{% endschema %}
