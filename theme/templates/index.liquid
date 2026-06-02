@@ -1,22 +1,4 @@
-<header class="site-header">
-    <a href="/" class="site-header__logo">
-      <img src="{{ 'logo.svg' | asset_url }}" alt="" />
-      MAME COFFEE
-    </a>
-    <div class="site-header__right">
-      <nav class="site-header__nav">
-        <a href="/">ホーム</a>
-        <a href="/products">商品一覧</a>
-        <a href="/about">お店について</a>
-      </nav>
-      <span class="site-header__cart">🛒 <span class="js-cart-count">0</span></span>
-    </div>
-  </header>
-
-  <section class="hero">
-    <h1 class="hero__title">毎朝に、一杯のしあわせを。</h1>
-    <p class="hero__text">自家焙煎したコーヒー豆を、焙煎したてでお届けします。</p>
-  </section>
+  {% section 'hero' %}
 
   <section class="products">
     <h2 class="products__heading">おすすめの豆</h2>
@@ -27,7 +9,3 @@
 
     </div>
   </section>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 MAME COFFEE</p>
-  </footer>

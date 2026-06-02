@@ -1,0 +1,21 @@
+<header class="site-header">
+  <a href="/" class="site-header__logo">
+    <img src="{{ 'logo.svg' | asset_url }}" alt="" />
+    MAME COFFEE
+  </a>
+  <div class="site-header__right">
+    <nav class="site-header__nav">
+      <a href="/">ホーム</a>
+      <a href="/products">商品一覧</a>
+      <a href="/about">お店について</a>
+    </nav>
+    <span class="site-header__cart">🛒 <span class="js-cart-count">0</span></span>
+  </div>
+</header>
+
+{% schema %}
+  {
+    "name": "ヘッダー",
+    "settings": []
+  }
+{% endschema %}
