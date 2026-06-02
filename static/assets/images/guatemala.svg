@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="グアテマラ アンティグア">
+  <rect width="400" height="400" fill="#6f4e37"/>
+  <ellipse cx="200" cy="165" rx="68" ry="92" fill="#2e1f14"/>
+  <path d="M200 80 Q212 165 200 250" stroke="#6f4e37" stroke-width="7" fill="none"/>
+  <text x="200" y="320" font-family="sans-serif" font-size="32" font-weight="bold" fill="#fff" text-anchor="middle">Guatemala</text>
+</svg>
