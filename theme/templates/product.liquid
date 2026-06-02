@@ -1,0 +1,17 @@
+<section class="product-detail">
+  <img class="product-detail__image" src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}"
+/>
+
+  <div class="product-detail__info">
+    <h1 class="product-detail__title">{{ product.title }}</h1>
+    <p class="product-detail__price">{{ product.price | money }}</p>
+    {% if product.description != blank %}
+      <div class="product-detail__description">{{ product.description }}</div>
+    {% endif %}
+
+    {% form 'product', product %}
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      <button type="submit" class="product-detail__button">カートに入れる</button>
+    {% endform %}
+  </div>
+</section>

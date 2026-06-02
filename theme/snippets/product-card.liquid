@@ -1,6 +1,8 @@
 <article class="product-card">
-  <img class="product-card__image" src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}" />
-  <h3 class="product-card__title">{{ product.title }}</h3>
+  <a href="{{ product.url }}" class="product-card__link">
+    <img class="product-card__image" src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}" />
+    <h3 class="product-card__title">{{ product.title }}</h3>
+  </a>
   <p class="product-card__price">{{ product.price | money }}</p>
-  <button class="product-card__button">カートに入れる</button>
+  <a href="{{ product.url }}" class="product-card__button">詳細を見る</a>
 </article>
