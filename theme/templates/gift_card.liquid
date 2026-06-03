@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ shop.name }} ギフトカード</title>
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+  </head>
+  <body>
+    <main class="gift-card" style="max-width: 480px; margin: 0 auto; padding: 56px 24px; text-align: center;">
+      <h1>{{ shop.name }} ギフトカード</h1>
+      <p class="gift-card__balance" style="font-size: 28px; font-weight: bold; color: #a9743b; margin: 16px 0;">
+        {{ gift_card.balance | money }}
+      </p>
+      {% if gift_card.enabled and gift_card.balance > 0 %}
+        <p>このコードをレジまたはオンラインでご利用ください。</p>
+        <p class="gift-card__code" style="font-size: 20px; letter-spacing: .1em; padding: 12px; border: 1px dashed #a9743b; display: inline-block;">
+          {{ gift_card.code | format_code }}
+        </p>
+      {% else %}
+        <p>このギフトカードは無効です。</p>
+      {% endif %}
+    </main>
+  </body>
+</html>
