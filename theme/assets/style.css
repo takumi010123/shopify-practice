@@ -46,7 +46,6 @@ img { display: block; max-width: 100%; }
 .hero {
   text-align: center;
   padding: 72px 24px;
-  background: #efe7dc;
 }
 .hero__title { font-size: 28px; margin-bottom: 12px; }
 .hero__text { font-size: 15px; color: #6b5f52; }
