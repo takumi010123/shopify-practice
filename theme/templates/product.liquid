@@ -8,7 +8,7 @@
       <div class="product-detail__description">{{ product.description }}</div>
     {% endif %}
 
-    {% form 'product', product %}
+    {% form 'product', product, class: 'js-product-form' %}
       {% if product.has_only_default_variant %}
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
       {% else %}
